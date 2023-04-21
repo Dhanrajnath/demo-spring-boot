@@ -14,6 +14,11 @@ public class HelloRestController {
 
     @GetMapping("/")
     public String sayHello() {
-        return "Hello World!, Time on the server is : " + LocalDateTime.now() + "-->" + envVar;
+        return "Hello World!, Time : " + LocalDateTime.now() + "-->" + envVar;
+    }
+
+    @GetMapping("/workout")
+    public String getDailyWorkout(){
+        return "Run a hard 5K!";
     }
 }
