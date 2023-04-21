@@ -1,7 +1,9 @@
 package com.luv2code.springboot.cruddemo.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "employee")
 public class Employee {
